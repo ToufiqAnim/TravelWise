@@ -9,6 +9,11 @@
             "date": 1697265389623,
             "name": "C:\\Project\\assignment-9\\travel-agency-backend\\logs\\winston\\errors\\phu-2023-14-10-12-error.log",
             "hash": "2050463ce8c370e7089f13973b87991d6737b2592e0b343944fe4c40590c81e8"
+        },
+        {
+            "date": 1697268764690,
+            "name": "C:\\Project\\assignment-9\\travel-agency-backend\\logs\\winston\\errors\\phu-2023-14-10-13-error.log",
+            "hash": "067c6f50e8ff564e1e89a70059520c2e03e6d56e58e31ff875cd72e5b19f39bb"
         }
     ],
     "hashType": "sha256"
