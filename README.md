@@ -1,9 +1,9 @@
-# University Management Core Service
+# Travel Wise
 This guide will walk you through the process of setting up the University Management Core Service Starter project. By following these steps, you will clone the project, install dependencies, and configure Prisma for database management. Let's get started!
 
 
 ## Installation Steps
-### Follow these steps to clone and set up starter project:
+### Follow these steps to clone and set up a starter project:
 
 1. `Clone the project:` Open your terminal or command prompt and run the following command to clone the project repository:
 
