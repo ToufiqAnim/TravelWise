@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Project\\assignment-9\\travel-agency-backend\\logs\\winston\\successes\\.91b25758748b16ca923b950cc48a591d76d5cf08-audit.json",
+    "files": [
+        {
+            "date": 1697265389614,
+            "name": "C:\\Project\\assignment-9\\travel-agency-backend\\logs\\winston\\successes\\phu-2023-14-10-12-success.log",
+            "hash": "82c18b0790c7cd49019a05cfe3feac965d66e0911d9e4d773d7f06b958401fbc"
+        }
+    ],
+    "hashType": "sha256"
+}
