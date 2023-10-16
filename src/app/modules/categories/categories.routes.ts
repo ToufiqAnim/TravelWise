@@ -1,9 +1,9 @@
 import express from 'express';
-import { CategoryValidations } from './validation';
-import validateRequest from '../../middlewares/validateRequest';
-import { CategoryController } from './controller';
-import auth from '../../middlewares/auth';
 import { ENUM_USER_ROLE } from '../../../enums/user';
+import auth from '../../middlewares/auth';
+import validateRequest from '../../middlewares/validateRequest';
+import { CategoryController } from './categories.controller';
+import { CategoryValidations } from './categories.validation';
 
 const router = express.Router();
 
@@ -11,7 +11,7 @@ router.post(
   '/',
   auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
   validateRequest(CategoryValidations.createCategory),
-  CategoryController.createAdmin
+  CategoryController.createCategories
 );
 
 router.get(

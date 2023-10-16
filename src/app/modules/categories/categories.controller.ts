@@ -5,16 +5,16 @@ import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
 import { categorySearchAndFilter } from './categories.constant';
-import { CategoryService } from './service';
+import { CategoryService } from './categories.service';
 
-const createAdmin: RequestHandler = catchAsync(async (req, res) => {
+const createCategories: RequestHandler = catchAsync(async (req, res) => {
   const adminData = req.body;
-  const result = await CategoryService.createAdmin(adminData);
+  const result = await CategoryService.createCategories(adminData);
 
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Admin created successfully',
+    message: 'Category created successfully',
     data: result,
   });
 });
@@ -74,7 +74,7 @@ const deleteCategory: RequestHandler = catchAsync(async (req, res) => {
 });
 
 export const CategoryController = {
-  createAdmin,
+  createCategories,
   getCategory,
   getCategorys,
   updateCategory,

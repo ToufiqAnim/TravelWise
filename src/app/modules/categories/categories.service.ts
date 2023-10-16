@@ -3,9 +3,9 @@ import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import { categorySearchableFields } from './categories.constant';
 import { ICategory, ICategorySearch } from './categories.interface';
-import { Category } from './modal';
+import { Category } from './categories.model';
 
-const createAdmin = async (payload: ICategory) => {
+const createCategories = async (payload: ICategory) => {
   const category = await Category.create(payload);
   return category;
 };
@@ -69,7 +69,7 @@ const deleteCategory = async (id: string) => {
 };
 
 export const CategoryService = {
-  createAdmin,
+  createCategories,
   getCategorys,
   getCategory,
   updateCategory,
