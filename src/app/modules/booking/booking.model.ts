@@ -4,7 +4,7 @@ import { ENUM_BOOKING_STATUS, IBooking } from './booking.interface';
 const bookingSchema = new Schema<IBooking>(
   {
     orderBy: { type: Types.ObjectId, ref: 'User', required: true },
-    service: { type: Types.ObjectId, ref: 'CleaningService', required: true },
+    service: { type: Types.ObjectId, ref: 'TourismService', required: true },
     serviceDate: { type: Date, required: true },
     status: {
       type: String,

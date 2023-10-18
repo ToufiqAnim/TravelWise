@@ -18,7 +18,7 @@ const tourismServiceSchema = new Schema<ITourismService>(
       type: Boolean,
       default: false,
     },
-    review: { type: Types.ObjectId, ref: 'review' },
+    review: { type: Types.ObjectId, ref: 'Review' },
   },
   { timestamps: true }
 );
