@@ -8,10 +8,16 @@ export enum TOURISM_SERVICE_STATUS_ENUM {
 
 export type ITourismService = {
   title: string;
+  city: string;
+  address: string;
+  distance: string;
   price: number;
+  maxGroupSize: number;
+  image: string;
   status: TOURISM_SERVICE_STATUS_ENUM;
   description: string;
-  category: Schema.Types.ObjectId;
+  featured: boolean;
+  review: Schema.Types.ObjectId;
 };
 
 export type ITourismServiceSearch = { searchTerm?: string };

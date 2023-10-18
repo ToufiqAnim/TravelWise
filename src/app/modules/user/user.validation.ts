@@ -11,9 +11,9 @@ const createAdmin = z.object({
     role: z
       .enum(Object.values(ENUM_USER_ROLE) as [string, ...string[]])
       .optional(),
-    confirmPassword: z.string({
+    /*   confirmPassword: z.string({
       required_error: 'Confirm Password is required',
-    }),
+    }), */
     address: z.string({ required_error: 'Address is required' }),
   }),
 });

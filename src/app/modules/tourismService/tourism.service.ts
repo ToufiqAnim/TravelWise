@@ -46,6 +46,7 @@ const GetTourismServices = async (
     : {};
 
   const tourismServices = await TourismService.find(whereCondition)
+    .populate('category')
     .sort(sortCondition)
     .skip(skip)
     .limit(limit);

@@ -8,7 +8,7 @@ import { ProfileValidations } from './profile.validation';
 const router = express.Router();
 
 router.get(
-  '/me',
+  '/my-profile',
   auth(
     ENUM_USER_ROLE.SUPER_ADMIN,
     ENUM_USER_ROLE.ADMIN,

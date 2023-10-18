@@ -2,6 +2,9 @@ import express from 'express';
 import { AuthRoutes } from '../modules/auth/auth.routes';
 import { BookingRoutes } from '../modules/booking/booking.routes';
 import { CategoryRoutes } from '../modules/categories/categories.routes';
+import { FeedbackRoutes } from '../modules/feedback/feedback.routes';
+import { ProfileRoutes } from '../modules/profile/profile.routes';
+import { ReviewRoutes } from '../modules/review/review.routes';
 import { TourismServiceRoutes } from '../modules/tourismService/tourism.routes';
 import { UserRoutes } from '../modules/user/user.routes';
 
@@ -28,6 +31,18 @@ const moduleRoutes = [
   {
     path: '/bookings',
     routes: BookingRoutes,
+  },
+  {
+    path: '/reviews',
+    routes: ReviewRoutes,
+  },
+  {
+    path: '/profile',
+    routes: ProfileRoutes,
+  },
+  {
+    path: '/feedbacks',
+    routes: FeedbackRoutes,
   },
 ];
 
