@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const auth_routes_1 = require("../modules/auth/auth.routes");
 const booking_routes_1 = require("../modules/booking/booking.routes");
+const cart_routes_1 = require("../modules/cart/cart.routes");
 const categories_routes_1 = require("../modules/categories/categories.routes");
 const feedback_routes_1 = require("../modules/feedback/feedback.routes");
 const profile_routes_1 = require("../modules/profile/profile.routes");
@@ -46,6 +47,10 @@ const moduleRoutes = [
     {
         path: '/feedbacks',
         routes: feedback_routes_1.FeedbackRoutes,
+    },
+    {
+        path: '/carts',
+        routes: cart_routes_1.CartRoutes,
     },
 ];
 moduleRoutes.forEach(route => router.use(route.path, route.routes));
