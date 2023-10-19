@@ -1,5 +1,5 @@
 import { IUser } from '../user/user.interface';
-import { User } from '../user/user.model';
+import { User } from '../user/user.modal';
 
 const GetProfile = async (id: string) => {
   const profile = await User.findById(id);

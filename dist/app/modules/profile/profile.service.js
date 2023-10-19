@@ -10,13 +10,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProfileService = void 0;
-const user_model_1 = require("../user/user.model");
+const user_modal_1 = require("../user/user.modal");
 const GetProfile = (id) => __awaiter(void 0, void 0, void 0, function* () {
-    const profile = yield user_model_1.User.findById(id);
+    const profile = yield user_modal_1.User.findById(id);
     return profile;
 });
 const UpdateProfile = (id, payload) => __awaiter(void 0, void 0, void 0, function* () {
-    const profile = yield user_model_1.User.findByIdAndUpdate(id, payload, {
+    const profile = yield user_modal_1.User.findByIdAndUpdate(id, payload, {
         new: true,
         runValidators: true,
     });
