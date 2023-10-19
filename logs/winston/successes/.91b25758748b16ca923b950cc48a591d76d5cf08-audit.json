@@ -99,6 +99,11 @@
             "date": 1697709601816,
             "name": "C:\\Project\\assignment-9\\travel-agency-backend\\logs\\winston\\successes\\phu-2023-19-10-16-success.log",
             "hash": "b85949387097e10ee6da1dd08bb55ba6b0b15fffe984b4c6368d446486f0b29e"
+        },
+        {
+            "date": 1697733217715,
+            "name": "C:\\Project\\assignment-9\\travel-agency-backend\\logs\\winston\\successes\\phu-2023-19-10-22-success.log",
+            "hash": "9250e62bdd1ec3695eb6be89de1232a529008ca7ce17e29b7636a30776688738"
         }
     ],
     "hashType": "sha256"
