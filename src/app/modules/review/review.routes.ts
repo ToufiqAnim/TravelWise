@@ -15,7 +15,7 @@ router.post(
 );
 
 router.get('/', ReviewController.GetAllReviews);
-
+router.get('/:serviceId', ReviewController.GetReviewsByServiceId);
 router.get('/:id', auth(ENUM_USER_ROLE.CUSTOMER), ReviewController.GetReview);
 
 router.patch(

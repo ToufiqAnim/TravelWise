@@ -5,7 +5,7 @@ import { IPaginationOptions } from '../../../interfaces/pagination';
 import { AuthUtils } from '../auth/auth.utils';
 import { userSearchableFields } from './user.constant';
 import { IUser, IUserSearch } from './user.interface';
-import { User } from './user.modal';
+import { User } from './user.model';
 
 const CreateAdmin = async (payload: IUser) => {
   payload.password = await AuthUtils.hashPassword(payload.password);

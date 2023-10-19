@@ -4,7 +4,7 @@ import config from '../../../config';
 import ApiError from '../../../errors/ApiError';
 import { jwtHelpers } from '../../../helpers/jwtHelpers';
 import { IUser } from '../user/user.interface';
-import { User } from '../user/user.modal';
+import { User } from '../user/user.model';
 import { ISignIn } from './auth.interface';
 import { AuthUtils } from './auth.utils';
 

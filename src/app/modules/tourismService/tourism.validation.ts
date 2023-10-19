@@ -9,7 +9,7 @@ const createService = z.object({
     status: z
       .enum(Object.values(TOURISM_SERVICE_STATUS_ENUM) as [string, ...string[]])
       .optional(),
-    category: z.string({ required_error: 'Category is required' }),
+    review: z.string().optional(),
   }),
 });
 
@@ -21,7 +21,7 @@ const updateService = z.object({
     status: z
       .enum(Object.values(TOURISM_SERVICE_STATUS_ENUM) as [string, ...string[]])
       .optional(),
-    category: z.string().optional(),
+    review: z.string().optional(),
   }),
 });
 

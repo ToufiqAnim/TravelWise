@@ -9,7 +9,6 @@ export enum TOURISM_SERVICE_STATUS_ENUM {
 export type ITourismService = {
   title: string;
   city: string;
-  address: string;
   distance: string;
   price: number;
   maxGroupSize: number;

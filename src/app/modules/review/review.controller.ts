@@ -27,7 +27,17 @@ const GetAllReviews: RequestHandler = catchAsync(async (req, res) => {
     data: result,
   });
 });
+const GetReviewsByServiceId: RequestHandler = catchAsync(async (req, res) => {
+  const serviceId = req.params.serviceId;
+  const result = await ReviewService.GetReviewsByServiceId(serviceId);
 
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Reviews data fetched successfully',
+    data: result,
+  });
+});
 const GetReview: RequestHandler = catchAsync(async (req, res) => {
   const id = req.params.id;
   const result = await ReviewService.GetReview(id);
@@ -68,6 +78,7 @@ const DeleteReview: RequestHandler = catchAsync(async (req, res) => {
 export const ReviewController = {
   CreateReview,
   GetAllReviews,
+  GetReviewsByServiceId,
   GetReview,
   UpdateReview,
   DeleteReview,
